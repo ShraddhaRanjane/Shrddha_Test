@@ -158,7 +158,7 @@ class calculate_taxes_and_totals(object):
 
 				if cumulated_tax_fraction and not self.discount_amount_applied and item.qty:
 					# print "\n\n\n............... in if cumulated_tax_fraction......"
-					# print "\n\n\n............... in if cumulated_tax_fraction......",cumulated_tax_fraction
+					# print "\n\n\n.hhhhhhhhh.............. in if cumulated_tax_fraction......",cumulated_tax_fraction
 					item.net_amount = flt(item.amount / (1 + cumulated_tax_fraction), item.precision("net_amount"))
 					item.net_rate = flt(item.net_amount / item.qty, item.precision("net_rate"))
 					# print "\n\n\n.......item.net_rate........ in if cumulated_tax_fraction......",item.net_rate
